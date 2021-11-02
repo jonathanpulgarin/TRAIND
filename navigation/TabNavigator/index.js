@@ -5,7 +5,6 @@ import Home from '../../screens/Home';
 import Messages from '../../screens/Messages';
 import Account from '../../screens/Account';
 
-import Icon from 'react-native-vector-icons/AntDesign';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
