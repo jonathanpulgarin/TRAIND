@@ -5,10 +5,16 @@ import {
 	Text,
 	StyleSheet,
 	ScrollView,
+	Dimensions
 } from 'react-native';
-import ActivityTypeImagePost from '../components/activityTypeImagePost';
+
+import ActivityTypeImagePost from '../components/ActivityTypeImagePost';
 import HeroSection from '../components/HeroSection';
 import { data } from './data';
+import { colors } from '../constants/colors';
+import FeaturedSection from '../components/FeaturedSection';
+
+const WIDTH = Dimensions.get('window').width;
 
 const Home = () => {
 	//const tabBarheight = useBottomTabBarHeight();
@@ -33,9 +39,10 @@ const Home = () => {
 						</View>
 					</View>
 					{data.map((item) => (
-						<ActivityTypeImagePost key={item.id} image={item.image_url} title={item.title}></ActivityTypeImagePost>
+						<ActivityTypeImagePost key={item.id} image={{uri: item.image_url}} title={item.title}></ActivityTypeImagePost>
 					))}
 				</View>
+				<FeaturedSection></FeaturedSection>
 			</ScrollView>
 		</View>
 	);
@@ -53,28 +60,28 @@ const styles = StyleSheet.create({
 	homeTitle: {
 		fontSize: 24,
 		fontWeight: "600",
-		marginTop: "10px",
-		marginBottom: "10px",
+		marginTop: 10,
+		marginBottom: 10,
 	},
 	dividerContainer: {
 		width: "100%",
-		height: "25px",
+		height: 25,
 		flexDirection:'row',
 		flexWrap:'wrap',
-		marginBottom: "10px"
+		marginBottom: 10
 	},
 	dividerSection1: {
 		width: "50%",
 		height: "100%",
-		backgroundColor: "#E3F0D1"
+		backgroundColor: colors.secondary
 	},
 	dividerSection2: {
 		width: "50%",
 		height: "100%",
 	},
 	dividerSectionText: {
-		marginTop: "3px",
-		marginLeft: "5px"
+		marginTop: 3,
+		marginLeft: 5
 	}
 });
 

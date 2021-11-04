@@ -1,5 +1,9 @@
 import React from 'react';
-import { View, ImageBackground, Text, StyleSheet } from 'react-native';
+import { View, ImageBackground, Text, StyleSheet, TouchableOpacity, Dimensions, Alert } from 'react-native';
+
+import { colors } from '../constants/colors'
+
+const WIDTH = Dimensions.get('window').width;
 
 const image = { uri: "https://images.pexels.com/photos/3822170/pexels-photo-3822170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" };
 
@@ -10,7 +14,9 @@ const HeroSection = (props) => {
                 <Text style={styles.title}>It's time to get TRAIND.</Text>
                 <Text style={styles.description}>Find a trainer that is perfect for you, anywhere, anytime.</Text>
                 <View style={styles.buttonContainer}>
-                    <Text style={styles.button}>GET TRAIND</Text>
+                    <TouchableOpacity onPress={() => Alert.alert('Simple Button pressed')}>
+                        <Text style={styles.button}>GET TRAIND</Text>
+                    </TouchableOpacity>
                 </View>
             </ImageBackground>
         </View>
@@ -21,26 +27,24 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#0f0f0f',
-        width: "100%",
     },
     image: {
-        height: "300px",
-        paddingVertical: "15px",
-        paddingHorizontal: "20px"
+        height: 300,
+        paddingVertical: 15,
+        paddingHorizontal: 20
     },
     title: {
-        position: "absolute",
         fontSize: 24,
         fontWeight: "600",
     },
     description: {
-        width: "300px",
+        width: 300,
         fontSize: 18,
         fontWeight: "500",
-        marginTop: "40px"
+        marginTop: 30
     },
     buttonContainer: {
-        width: "100%",
+        width: WIDTH,
         alignItems: "center",
         position: "absolute",
         bottom: 40,
@@ -51,11 +55,12 @@ const styles = StyleSheet.create({
         color: "white",
         textAlign: "center",
         fontWeight: "600",
-        backgroundColor: "#789948",
+        backgroundColor: colors.primary,
         paddingTop: 13,
         paddingBottom: 15,
         paddingHorizontal: 50,
-        borderRadius: 50
+        borderRadius: 25,
+        overflow: 'hidden',
     }
 });
 
