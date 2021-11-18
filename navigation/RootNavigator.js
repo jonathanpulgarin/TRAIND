@@ -7,10 +7,10 @@ import SignUp from '../screens/SignUp';
 
 const RootNavigator = () => {
 	return (
-		<NavigationContainer>
-			<TabNavigator navigationOptions={{ header: null }} />
-		</NavigationContainer>
-		// <Login></Login>
+		// <NavigationContainer>
+		// 	<TabNavigator navigationOptions={{ header: null }} />
+		// </NavigationContainer>
+		<Login></Login>
 	);
 };
 
