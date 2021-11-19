@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../screens/Home';
 import Messages from '../../screens/Messages';
 import Account from '../../screens/Account';
-
+import Search from '../../screens/Search';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -53,7 +53,7 @@ const TabNavigator = () => {
 			})}>
 
 			<Tab.Screen name="Home" component={Home} />
-			<Tab.Screen name="Saved" component={Messages} />
+			<Tab.Screen name="Saved" component={Search} />
 			<Tab.Screen name="Workouts" component={Account} />
 			<Tab.Screen name="Messages" component={Account} />
 			<Tab.Screen name="Calendar" component={Account} />

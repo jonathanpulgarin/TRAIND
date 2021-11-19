@@ -14,8 +14,6 @@ import { data } from './data';
 import { colors } from '../constants/colors';
 import FeaturedSection from '../components/FeaturedSection';
 
-import TestComponent from '../components/TestComponent';
-
 const WIDTH = Dimensions.get('window').width;
 
 const Home = () => {
@@ -45,7 +43,6 @@ const Home = () => {
 					))}
 				</View>
 				<FeaturedSection></FeaturedSection>
-				<TestComponent></TestComponent>
 			</ScrollView>
 		</View>
 	);

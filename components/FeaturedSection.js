@@ -23,7 +23,7 @@ const FeaturedSection = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        // flex: 1,
         backgroundColor: colors.secondary,
         paddingTop: 10,
         paddingBottom: 20
