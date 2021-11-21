@@ -7,7 +7,7 @@ const WIDTH = Dimensions.get('window').width;
 const SuggestionBubble = (props) => {
 
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} activeOpacity={0.5}>
             <Text style={styles.text}>{props.innerText}</Text>
         </TouchableOpacity>
     );

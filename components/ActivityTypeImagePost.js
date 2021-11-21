@@ -3,7 +3,7 @@ import { View, ImageBackground, Text, StyleSheet, TouchableOpacity, Alert } from
 
 const ActivityTypeImagePost = (props) => {
 	return (
-		<TouchableOpacity onPress={() => Alert.alert('Simple Button pressed')} style={styles.container}>
+		<TouchableOpacity activeOpacity={0.9} onPress={() => Alert.alert('Simple Button pressed')} style={styles.container}>
 			<ImageBackground source={props.image} resizeMode="cover" style={styles.image}>
                 <Text style={styles.title}>{props.title}</Text>
             </ImageBackground>

@@ -9,7 +9,7 @@ const InstructorCard = (props) => {
     const navigation = useNavigation();
 
     return (
-        <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('InstructorAvailability', { name: props.postData.name })
+        <TouchableOpacity style={styles.container} activeOpacity={0.8} onPress={() => navigation.navigate('InstructorAvailability', { name: props.postData.name })
           }>
             <View>
                 <ImageBackground source={{uri: props.postData.image_url}} resizeMode="cover" style={styles.imageContainer}>

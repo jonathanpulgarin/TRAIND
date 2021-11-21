@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <Text style={styles.title}>It's time to get TRAIND.</Text>
                 <Text style={styles.description}>Find a trainer that is perfect for you, anywhere, anytime.</Text>
                 <View style={styles.buttonContainer}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+                    <TouchableOpacity activeOpacity={0.9} onPress={() => navigation.navigate('Search')}>
                         <Text style={styles.button}>GET TRAIND</Text>
                     </TouchableOpacity>
                 </View>
