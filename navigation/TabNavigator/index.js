@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Home from '../../screens/Home';
+import SearchStack from '../SearchStack'
 import Messages from '../../screens/Messages';
 import Account from '../../screens/Account';
 import Search from '../../screens/Search';
@@ -49,11 +50,12 @@ const TabNavigator = () => {
 				tabBarIcon: ({ color }) => screenOptions(route, color),
 				tabBarShowLabel: false,
 				tabBarActiveTintColor: "#789948",
-				tabBarInactiveTintColor: "black"
+				tabBarInactiveTintColor: "black",
+				headerShown: false
 			})}>
 
-			<Tab.Screen name="Home" component={Home} />
-			<Tab.Screen name="Saved" component={Search} />
+			<Tab.Screen name="Home" component={SearchStack} />
+			<Tab.Screen name="Saved" component={Account} />
 			<Tab.Screen name="Workouts" component={Account} />
 			<Tab.Screen name="Messages" component={Account} />
 			<Tab.Screen name="Calendar" component={Account} />

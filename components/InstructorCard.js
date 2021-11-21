@@ -3,10 +3,14 @@ import { View, ImageBackground, Text, StyleSheet, ScrollView, TouchableOpacity, 
 
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../constants/colors';
+import { useNavigation } from '@react-navigation/native';
 
 const InstructorCard = (props) => {
+    const navigation = useNavigation();
+
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('InstructorAvailability', { name: props.postData.name })
+          }>
             <View>
                 <ImageBackground source={{uri: props.postData.image_url}} resizeMode="cover" style={styles.imageContainer}>
                     <View style={styles.ratingContainer}>
@@ -47,7 +51,10 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         width: 298,
         marginRight: 10,
+        marginBottom: 20,
         borderRadius: 16,
+        borderColor: "rgba(0, 0, 0, 0.2)",
+        borderWidth: 1,
         overflow: "hidden"
     },
     tinyLogo: {

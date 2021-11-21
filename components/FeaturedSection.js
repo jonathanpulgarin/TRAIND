@@ -3,7 +3,7 @@ import { View, ImageBackground, Text, StyleSheet, ScrollView } from 'react-nativ
 
 import InstructorCard from './InstructorCard';
 
-import { fakePostData } from '../fakePostData';
+import { fakePostData } from '../screens/data'
 import { colors } from '../constants/colors';
 
 const FeaturedSection = (props) => {
@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
         // flex: 1,
         backgroundColor: colors.secondary,
         paddingTop: 10,
-        paddingBottom: 20
     },
     title: {
         fontSize: 24,
