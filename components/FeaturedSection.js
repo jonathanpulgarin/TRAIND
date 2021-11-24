@@ -14,7 +14,7 @@ const FeaturedSection = (props) => {
                 <View style={styles.emptyView}></View>
 
                 {fakePostData.map((item) => (
-                    <InstructorCard key={item.id} postData={item}></InstructorCard>
+                    <InstructorCard key={item.id} postData={item} navLink={"TrainingSession"}></InstructorCard>
                 ))}
             </ScrollView>
         </View>

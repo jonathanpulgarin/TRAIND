@@ -51,7 +51,7 @@ const Search = ({navigation}) => {
                 <View style={styles.postsContainer}>
                     {
                         fakePostData.map(item => {
-                            return <InstructorCard key={item.id} postData={item}></InstructorCard>
+                            return <InstructorCard key={item.id} postData={item} navLink={"TrainingSession"}></InstructorCard>
                         })
                     }
                 </View>

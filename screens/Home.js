@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
 	dividerSection1: {
 		width: "50%",
 		height: "100%",
+		borderRadius: 5,
 		backgroundColor: colors.secondary
 	},
 	dividerSection2: {

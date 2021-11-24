@@ -45,13 +45,21 @@ export const moreToExplore = ["Outdoor Training", "Personal Training", "Online T
 export const fakePostData = [
 	{
 		id: '1',
+		name: 'Tim O',
         trainingType: 'Cross Fit',
         location: 'New York, NY',
-		name: 'Tim O',
+		indoorLocation: '',
+		outdoorLocation: '',
         ratingValue: "4.5",
         numberOfRatings: 198,
         cost: "$47/HR",
         description: 'Dymanic workout, challenging and rewarding. You can do this!',
+		fullDescription: 'If it’s your first session, I start at a moderate pace and graduallly increase the intensity to your needs. If you’ve already traind with me, I tailor every session to your needs. ',
+		subject: 'High Intensity Interval Training catered perfectly to your needs.',
+		keyAttributes: ['Teaches out of a facility', 'Meets outdoors', 'Commutes to you', 'Offers virtual'],
+		neededEquipment: ['breathable shirt', 'Comfortable bottoms', 'Running shoes', 'Water bottle'],
+		optionalEquipment: ['Smart watch'],
+		showcaseImages: [],
 		image_url:
 			'https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
 	},

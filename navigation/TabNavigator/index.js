@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../screens/Home';
 import SearchStack from '../SearchStack'
 import Messages from '../../screens/Messages';
+import SavedStack from '../SavedStack';
 import Account from '../../screens/Account';
 import Search from '../../screens/Search';
 import { Ionicons } from '@expo/vector-icons';
@@ -20,11 +21,11 @@ const screenOptions = (route, color) => {
 		case 'Calendar':
 			iconName = 'calendar';
 			break;
-		case 'Saved':
+		case 'Trainer':
 			iconName = 'clipboard';
 			break;
-		case 'Workouts':
-			iconName = 'bicycle';
+		case 'Saved':
+			iconName = 'star';
 			break;
 		case 'Messages':
 			iconName = 'chatbubbles';
@@ -55,8 +56,8 @@ const TabNavigator = () => {
 			})}>
 
 			<Tab.Screen name="Home" component={SearchStack} />
-			<Tab.Screen name="Saved" component={Account} />
-			<Tab.Screen name="Workouts" component={Account} />
+			<Tab.Screen name="Trainer" component={Account} />
+			<Tab.Screen name="Saved" component={SavedStack} />
 			<Tab.Screen name="Messages" component={Account} />
 			<Tab.Screen name="Calendar" component={Account} />
 			<Tab.Screen name="Account" component={Account} />

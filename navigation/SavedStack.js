@@ -1,19 +1,18 @@
 import React from 'react';
-import Home from '../screens/Home'
+import Saved from '../screens/Saved'
 import Search from '../screens/Search';
 import TrainingSession from '../screens/TrainingSession';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-const SearchStack = () => {
+const SavedStack = () => {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="StartSearch" component={Home} />
-            <Stack.Screen name="Search" component={Search} />
-            <Stack.Screen name="TrainingSession" component={TrainingSession} />
+            <Stack.Screen name="SavedHome" component={Saved} />
+            <Stack.Screen name="SavedTrainingSession" component={TrainingSession} />
         </Stack.Navigator>
     );
 }
 
-export default SearchStack;
+export default SavedStack;
