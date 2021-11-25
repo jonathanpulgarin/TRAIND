@@ -48,8 +48,14 @@ export const fakePostData = [
 		name: 'Tim O',
         trainingType: 'Cross Fit',
         location: 'New York, NY',
-		indoorLocation: '',
-		outdoorLocation: '',
+		indoorLocation: {
+			name: 'LA Fitness',
+			location: "7021 Hollywood Blvd, Los Angeles CA 90028, United States"
+		},
+		outdoorLocation: {
+			name: 'EOS Fitness',
+			location: "8538 Hollywood Blvd, Los Angeles CA 90028, United States"
+		},
         ratingValue: "4.5",
         numberOfRatings: 198,
         cost: "$47/HR",
@@ -59,7 +65,11 @@ export const fakePostData = [
 		keyAttributes: ['Teaches out of a facility', 'Meets outdoors', 'Commutes to you', 'Offers virtual'],
 		neededEquipment: ['breathable shirt', 'Comfortable bottoms', 'Running shoes', 'Water bottle'],
 		optionalEquipment: ['Smart watch'],
-		showcaseImages: [],
+		showcaseImages: [
+			'https://images.pexels.com/photos/4046747/pexels-photo-4046747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+			'https://images.pexels.com/photos/4058416/pexels-photo-4058416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+			'https://images.pexels.com/photos/4058325/pexels-photo-4058325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+		],
 		image_url:
 			'https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
 	},
