@@ -5,9 +5,11 @@ import {
     Text,
     StyleSheet,
     ScrollView,
-    Dimensions,
+    TouchableOpacity,
     Image
 } from 'react-native';
+
+import { useNavigation } from '@react-navigation/native';
 
 import InstructorCard from '../components/InstructorCard';
 import { data, fakePostData } from './data';
@@ -15,6 +17,7 @@ import { colors } from '../constants/colors';
 
 
 const Saved = () => {
+    const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
@@ -22,10 +25,10 @@ const Saved = () => {
                 <Text style={styles.title}>Saved</Text>
                 <Text style={styles.subTitle}>Saved &gt; Sessions</Text>
             </View>
-            <View style={styles.userImageContainer}>
+            <TouchableOpacity onPress={() => navigation.navigate('Account')} style={styles.userImageContainer}>
                 <Image style={styles.userImage} source={require('../assets/tim.png')}></Image>
                 <Text style={styles.userImageText}>Hi Tim</Text>
-            </View>
+            </TouchableOpacity>
             <ScrollView style={styles.savedScrollView}>
                 <View style={styles.savedPostsContainer}>
                     {

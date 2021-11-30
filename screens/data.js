@@ -42,10 +42,50 @@ export const suggestionResults = ["Pre-Natal", "Ashtanga", "Therapeutic", "Resto
 
 export const moreToExplore = ["Outdoor Training", "Personal Training", "Online Training"]
 
+export const AccountInfo = {
+	id: '1',
+	firstname: 'Tim',
+	name: 'Tim O',
+	trainingType: 'Cross Fit',
+	location: 'New York, NY',
+	indoorLocation: {
+		name: 'LA Fitness',
+		location: "7021 Hollywood Blvd, Los Angeles CA 90028, United States"
+	},
+	outdoorLocation: {
+		name: 'EOS Fitness',
+		location: "8538 Hollywood Blvd, Los Angeles CA 90028, United States"
+	},
+	ratingValue: "4.5",
+	numberOfRatings: 198,
+	cost: "$47/HR",
+	description: 'Dymanic workout, challenging and rewarding. You can do this!',
+	fullDescription: 'If it’s your first session, I start at a moderate pace and graduallly increase the intensity to your needs. If you’ve already traind with me, I tailor every session to your needs. ',
+	subject: 'High Intensity Interval Training catered perfectly to your needs.',
+	keyAttributes: ['Teaches out of a facility', 'Meets outdoors', 'Commutes to you', 'Offers virtual'],
+	neededEquipment: ['breathable shirt', 'Comfortable bottoms', 'Running shoes', 'Water bottle'],
+	optionalEquipment: ['Smart watch'],
+	yearsAsTrainer: "9",
+	favTrainingAspect: "supporting my clients",
+	keyTakeaway: "consistency is key",
+	tribeName: "Go Group",
+	certificationInclude: "certified LA Training",
+	playlistSongAlbumCover: "https://upload.wikimedia.org/wikipedia/en/4/46/M83-Hurry-Up-Were-Dreaming.jpg",
+	bookReadingCover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1504611957l/9577857._SX318_.jpg",
+	showcaseImages: [
+		'https://images.pexels.com/photos/4046747/pexels-photo-4046747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+		'https://images.pexels.com/photos/4058416/pexels-photo-4058416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+		'https://images.pexels.com/photos/4058325/pexels-photo-4058325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+	],
+	image_url:
+		'https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+};
+
 export const fakePostData = [
 	{
 		id: '1',
 		name: 'Tim O',
+		firstname: 'Tim',
         trainingType: 'Cross Fit',
         location: 'New York, NY',
 		indoorLocation: {
@@ -65,6 +105,11 @@ export const fakePostData = [
 		keyAttributes: ['Teaches out of a facility', 'Meets outdoors', 'Commutes to you', 'Offers virtual'],
 		neededEquipment: ['breathable shirt', 'Comfortable bottoms', 'Running shoes', 'Water bottle'],
 		optionalEquipment: ['Smart watch'],
+		yearsAsTrainer: "9",
+		favTrainingAspect: "supporting my clients",
+		keyTakeaway: "consistency is key",
+		tribeName: "Go Group",
+		certificationInclude: "certified LA Training",
 		showcaseImages: [
 			'https://images.pexels.com/photos/4046747/pexels-photo-4046747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 			'https://images.pexels.com/photos/4058416/pexels-photo-4058416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',

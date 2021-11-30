@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, ImageBackground, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import { View, ImageBackground, Text, StyleSheet, Alert } from 'react-native';
 
 const ActivityTypeImagePost = (props) => {
 	return (
-		<TouchableOpacity activeOpacity={0.9} onPress={() => Alert.alert('Simple Button pressed')} style={styles.container}>
+		<View style={styles.container}>
 			<ImageBackground source={props.image} resizeMode="cover" style={styles.image}>
                 <Text style={styles.title}>{props.title}</Text>
             </ImageBackground>
-		</TouchableOpacity>
+		</View>
 	);
 };
 

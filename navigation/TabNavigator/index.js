@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Home from '../../screens/Home';
 import SearchStack from '../SearchStack'
+import TrainerArea from '../../screens/TrainerArea';
 import Messages from '../../screens/Messages';
 import SavedStack from '../SavedStack';
 import Account from '../../screens/Account';
@@ -56,9 +57,9 @@ const TabNavigator = () => {
 			})}>
 
 			<Tab.Screen name="Home" component={SearchStack} />
-			<Tab.Screen name="Trainer" component={Account} />
+			<Tab.Screen name="Trainer" component={TrainerArea} />
 			<Tab.Screen name="Saved" component={SavedStack} />
-			<Tab.Screen name="Messages" component={Account} />
+			{/* <Tab.Screen name="Messages" component={Account} /> */}
 			<Tab.Screen name="Calendar" component={Account} />
 			<Tab.Screen name="Account" component={Account} />
 		</Tab.Navigator >
