@@ -9,11 +9,14 @@ import {
     Image
 } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
 import { Ionicons, Feather } from '@expo/vector-icons';
 import { colors } from '../constants/colors';
 
 const SessionOverviewCard = (props) => {
     const sessionData = props.sessionData;
+    const navigation = useNavigation();
+    
     return (
         <View style={styles.trainerInfoContainer}>
             <Image style={styles.trainerImage} source={{ uri: sessionData.image_url }} resizeMode="cover"></Image>
@@ -39,7 +42,7 @@ const SessionOverviewCard = (props) => {
                 }
             </View>
             <View style={{ alignItems: 'center' }}>
-                <TouchableOpacity style={styles.bookingButton}>
+                <TouchableOpacity style={styles.bookingButton} onPress={() => navigation.navigate('InstructorAvailability', sessionData)}>
                     <Text style={styles.bookingButtonText}>BOOK NOW</Text>
                 </TouchableOpacity>
             </View>
